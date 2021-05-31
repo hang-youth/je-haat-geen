@@ -13,7 +13,7 @@ function App() {
     if (!words.length) {
       fetchWords();
     }
-  }, []);
+  }, [words]);
 
   const fetchWords = async () => {
     fetch(wordlist)
